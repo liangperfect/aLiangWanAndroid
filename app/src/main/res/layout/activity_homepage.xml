@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/multipleStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mlst_bg"
+        app:emptyView="@layout/empty_view"
+        app:errorView="@layout/error_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:loadingView="@layout/layout_loading"
+        app:noNetworkView="@layout/no_network_view">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/recyclerview_item_bg"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/home_recyclerview_item" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.classic.common.MultipleStatusView>
+</android.support.constraint.ConstraintLayout>

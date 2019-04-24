@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.classic.common.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navMultipleStatusView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:loadingView="@layout/layout_loading"
+    app:noNetworkView="@layout/no_network_view"
+    android:background="@color/mlst_bg">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:id="@+id/navVerticalTabLayout"
+            android:layout_width="@dimen/dp_110"
+            android:layout_height="match_parent"
+            android:background="@color/verticlal_tab_bg"
+            app:indicator_color="#FFFFFF"
+            app:indicator_gravity="fill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tab_height="50dp"
+            app:tab_mode="scrollable" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/navRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/recyclerview_item_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/navVerticalTabLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/navigation_recyclerview_item" />
+    </android.support.constraint.ConstraintLayout>
+</com.classic.common.MultipleStatusView>

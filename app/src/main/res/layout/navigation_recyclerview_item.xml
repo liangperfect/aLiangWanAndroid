@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nav_item_bg">
+
+    <TextView
+        android:id="@+id/tvGroupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/item_tv_title"
+        android:textColor="@color/text_bg"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="每一组的标题" />
+
+    <me.gujun.android.taggroup.TagGroup
+        android:id="@+id/tagGroup"
+        style="@style/TagGroup1"
+        android:layout_marginTop="10dp"
+        android:background="@color/nav_group_bg"
+        app:atg_backgroundColor="@color/recyclerview_item_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGroupTitle" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.example.liangwanandroid"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    packagingOptions { exclude 'META-INF/rxjava.properties' }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = rootProject.ext.JAVA.sourceCompatibility
+        targetCompatibility = rootProject.ext.JAVA.targetCompatibility
+    }
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-v4:27.1.1'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation rootProject.ext.supportLibs
+    implementation rootProject.ext.networkLibs
+    implementation rootProject.ext.rxJavaLibs
+    implementation rootProject.ext.extraSupportLibs
+    annotationProcessor rootProject.ext.annotationsProcessorLibs
+}

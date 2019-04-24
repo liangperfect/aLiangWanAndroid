@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#ededed</color>
+    <color name="colorAccent">#499BE4</color>
+
+    <color name="tool_bg">@color/Grey900</color>
+    <color name="nav_header_bg">@color/Grey800</color>
+    <color name="nav_login_text_bg">@color/Grey400</color>
+    <color name="nav_bg">@color/Grey900</color>
+    <color name="nav_group_bg">@color/Grey700</color>
+    <color name="nav_item_bg">@color/Grey700</color>
+    <color name="recyclerview_item_bg">@color/Grey800</color>
+    <color name="recyclerview_item_title_bg">@color/Grey50</color>
+    <color name="text_bg">@color/Grey600</color>
+    <color name="card_bg">@color/recyclerview_item_bg</color>
+    <color name="bottom_nav_bg">@color/Grey900</color>
+    <color name="title_bg">@color/Grey400</color>
+    <color name="mlst_bg">@color/recyclerview_item_bg</color>
+    <color name="verticlal_tab_bg">@color/recyclerview_item_bg</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homgpage"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="首页"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/projets"
+        android:enabled="true"
+        android:icon="@drawable/ic_project_black_24dp"
+        android:title="开源项目"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/knowledge"
+        android:enabled="true"
+        android:icon="@drawable/ic_apps_black_24dp"
+        android:title="知识体系"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation"
+        android:enabled="true"
+        android:icon="@drawable/ic_navigation_black_24dp"
+        android:title="导航"
+        app:showAsAction="ifRoom" />
+</menu>

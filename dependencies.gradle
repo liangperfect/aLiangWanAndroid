@@ -1,0 +1,81 @@
+ext {
+
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 22,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    JAVA = [
+            sourceCompatibility: '1.8',
+            targetCompatibility: '1.8'
+    ]
+
+    dependVersion = [
+            androidSupportVersion  : "28.0.0",
+            constraintLayoutVersion: "1.1.2",
+            rxJavaVersion          : "2.2.6",
+            rxAndroidVersion       : "2.1.1",
+            butterknifeVersion     : "8.8.1",
+            retrofitVersion        : "2.3.0",
+            okHttpVersion          : "3.10.0",
+            retrofitAdapterVersion : "1.0.0",
+            glideVersion           : "4.9.0",
+    ]
+
+    androidSupport = [
+            "appcompat-v7"            : "com.android.support:appcompat-v7:${dependVersion.androidSupportVersion}",
+            "design"                  : "com.android.support:design:${dependVersion.androidSupportVersion}",
+            "constraintLayout"        : 'com.android.support.constraint:constraint-layout:1.1.3',
+            "constraintLayoutAndroidX": "androidx.constraintlayout:constraintlayout:${dependVersion.constraintLayoutVersion}",
+            "recyclerView"            : "com.android.support:recyclerview-v7:${dependVersion.androidSupportVersion}",
+    ]
+
+    retrofit = [
+            "retrofitConverter": "com.squareup.retrofit2:converter-gson:${dependVersion.retrofitVersion}",
+            "retrofitRxJava"   : "com.squareup.retrofit2:adapter-rxjava:${dependVersion.retrofitVersion}",
+            "okHttp3"          : "com.squareup.okhttp3:okhttp:${dependVersion.okHttpVersion}",
+            "retrofitAdapter"  : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${dependVersion.retrofitAdapterVersion}",
+            "retrofitBeta"     : "com.squareup.retrofit2:retrofit:2.0.0-beta3",
+            "okHttoInterceptor": "com.squareup.okhttp3:logging-interceptor:3.10.0"
+    ]
+
+    rxJava = [
+            "rxJava"   : "io.reactivex.rxjava2:rxjava:${dependVersion.rxJavaVersion}",
+            "rxAndroid": "io.reactivex.rxjava2:rxandroid:${dependVersion.rxAndroidVersion}"
+    ]
+
+    annotations = [
+            "butterknifeCompliler": "com.jakewharton:butterknife-compiler:${dependVersion.butterknifeVersion}",
+            "glideCompiler"       : "com.github.bumptech.glide:compiler:${dependVersion.glideVersion}",
+            "roomCompiler"        : "android.arch.persistence.room:compiler:1.0.0"
+    ]
+
+    extraSupport = [
+            "easypermission"    : "pub.devrel:easypermissions:2.0.1",
+            "butterknife"       : "com.jakewharton:butterknife:${dependVersion.butterknifeVersion}",
+            "rxpermission"      : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
+            "jodaTime"          : "joda-time:joda-time:2.10.1",
+            "glide"             : "com.github.bumptech.glide:glide:${dependVersion.glideVersion}",
+            "circleImageView"   : "de.hdodenhof:circleimageview:3.0.0",
+            "banner"            : "com.youth.banner:banner:1.4.10",
+            "multipleStatusView": "com.classic.common:multiple-status-view:1.6",
+            "bvAadapter"        : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40",
+            "agentWeb"          : "com.just.agentweb:agentweb:2.0.0",
+            "VerticalTabLayout" : "q.rorbin:VerticalTabLayout:1.2.5",
+            "tagGroup"          : "me.gujun.android.taggroup:library:1.4@aar",
+            "eventbus"          : "org.greenrobot:eventbus:3.1.1",
+            "spinkit"           : "com.github.ybq:Android-SpinKit:1.2.0",
+            "room"              : "android.arch.persistence.room:runtime:1.0.0"
+    ]
+
+    supportLibs = androidSupport.values()
+    networkLibs = retrofit.values()
+    rxJavaLibs = rxJava.values()
+    extraSupportLibs = extraSupport.values()
+
+    annotationsProcessorLibs = annotations.values()
+}

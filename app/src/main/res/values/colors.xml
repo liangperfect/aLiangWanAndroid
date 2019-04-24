@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#ededed</color>
+    <color name="colorAccent">#499BE4</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="textColorPrimary">#616161</color>
+    <color name="tool_bg">@color/Blue</color>
+    <color name="list_divider">@color/Grey400</color>
+    <color name="nav_header_bg">@color/Blue</color>
+    <color name="nav_login_text_bg">@color/Black</color>
+    <color name="nav_bg">@color/White</color>
+    <color name="nav_group_bg">@color/White</color>
+    <color name="nav_item_bg">@color/White</color>
+    <color name="recyclerview_item_bg">@color/white</color>
+    <color name="recyclerview_item_title_bg">@color/Black</color>
+    <color name="text_bg">@color/Black</color>
+    <color name="card_bg">@color/white</color>
+    <color name="bottom_nav_bg">@color/white</color>
+    <color name="title_bg">@color/white</color>
+    <color name="mlst_bg">@color/White</color>
+    <color name="transparent_75">#ba000000</color>
+    <color name="item_flow_layout_bg">@color/Grey200</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Red">#f44336</color>
+    <color name="Pink">#e91e63</color>
+    <color name="Purple">#9c27b0</color>
+    <color name="Deep_Purple">#673ab7</color>
+    <color name="Indigo">#3f51b5</color>
+    <color name="Blue">#2196f3</color>
+    <color name="Light_Blue">#03a9f4</color>
+    <color name="Cyan">#00bcd4</color>
+    <color name="Teal">#009688</color>
+    <color name="Green">#4caf50</color>
+    <color name="Light_Green">#8bc34a</color>
+    <color name="Lime">#cddc39</color>
+    <color name="Yellow">#ffeb3b</color>
+    <color name="Amber">#ffc107</color>
+    <color name="Orange">#ff9800</color>
+    <color name="Deep_Orange">#ff5722</color>
+    <color name="Brown">#795548</color>
+    <color name="Grey">#9e9e9e</color>
+    <color name="Blue_Grey">#607d8b</color>
+    <color name="verticlal_tab_bg">#EDEDED</color>
+
+    <color name="light_red">#e26d2e</color>
+    <color name="deep_red">#dc3b1f</color>
+    <color name="while_most_color">#e4e4e4</color>
+    <color name="title_black">#222222</color>
+    <color name="grey_search">#FF999999</color>
+
+    <color name="Grey50">#FAFAFA</color>
+    <color name="Grey100">#F5F5F5</color>
+    <color name="Grey200">#EEEEEE</color>
+    <color name="Grey300">#E0E0E0</color>
+    <color name="Grey400">#bdbdbd</color>
+    <color name="Grey500">#9e9e9e</color>
+    <color name="Grey600">#757575</color>
+    <color name="Grey700">#616161</color>
+    <color name="Grey800">#424242</color>
+    <color name="Grey900">#212121</color>
+
+</resources>

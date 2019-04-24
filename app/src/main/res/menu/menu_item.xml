@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/collection"
+            android:icon="@drawable/ic_like_not"
+            android:title="收藏" />
+
+        <item
+            android:id="@+id/night"
+            android:icon="@drawable/ic_night_24dp"
+            android:title="夜间模式" />
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_setting_24dp"
+            android:title="设置" />
+
+        <item
+            android:id="@+id/aboutUs"
+            android:icon="@drawable/ic_setting_24dp"
+            android:title="关于我们" />
+
+        <item
+            android:id="@+id/loginOut"
+            android:icon="@drawable/ic_logout_white_24dp"
+            android:title="退出登录" />
+
+    </group>
+</menu>
