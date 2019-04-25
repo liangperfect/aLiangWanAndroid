@@ -51,8 +51,15 @@ wanAndroid项目基于 Material Design + MVP + Rxjava2 + Retrofit + Room + Glide
 ### DB
 [Room]("")
 
+## TODO
+- 添加生命周期管理
+- RxJava防止内存溢出
+- UI部分调整
+- 设置功能
+- TODO功能添加
+
 ## License
-Copyright (c) 2016 codeestX
+Copyright (c) 2019 liangperfect
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
